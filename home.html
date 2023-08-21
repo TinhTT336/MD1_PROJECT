@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="user/css/index.css">
+    <link rel="stylesheet" href="user/css/common.css">
+    <link rel="stylesheet" href="user/css/news.css">
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="header-top">
+        <p>Tươi ngon mỗi ngày | Greentie</p>
+        <ul class="header-top-icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            <li><a href="tel:083-123-4567"><i class="fa-solid fa-phone"></i> 083-123-4567</a></li>
+        </ul>
+    </div>
+    <nav>
+        <img src="image/logo copy.png" alt="">
+        <div class="navbar-list">
+            <ul class="navbar-list-dashboard">
+                <li><a href="home.html">Trang chủ</a></li>
+                <li><a href="user/about.html">Giới thiệu</a></li>
+                <li><a href="user/product.html">Sản phẩm <i class="wsmenu-arrow fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-lemon"></i> Trái cây nội</a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i> Trái cây nhập khẩu</a></li>
+                        <li><a href="#"><i class="fa-solid fa-blender-phone"></i> Nước ép trái cây</a></li>
+                        <li><a href="#"><i class="fa-brands fa-nutritionix"></i> Rau củ quả</a></li>
+                    </ul>
+                </li>
+                <li><a href="user/contact.html">Liên hệ</a></li>
+
+                <li><a href="home.html">Tin tức</a></li>
+        </div>
+        <div class="navbar-list">
+            <ul class="navbar-list-item">
+                <li><button type="button">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    <ul class="navbar-search">
+                        <li>
+                            <form id="#" method="get" action="#">
+                                <div class="form">
+                                    <input type="text" name="nav-search" id="nav-search" value=""
+                                        placeholder="Tìm kiếm tên sản phẩm">
+                                    <button type="button" onclick="searchByName()"><i
+                                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="cart"><a href="user/cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"><span
+                                id="cart-count"></span></i></a>
+                </li>
+                <!-- <img src="./image/avatar.jpeg" alt="anh"> -->
+                <li id="account">
+
+                    <!-- <a style="display: inline-block;">
+                        <img src="./image/Apricots.webp" alt="img">
+                        <span>tinh</span>
+                    </a>
+                    <ul id="navbar-account">
+                        <li><a href="#info.html"><i class="bi bi-person-badge"></i> Thông tin tài khoản</a></li>
+                        <li><a href="signinup.html"><i class="fa-solid fa-right-to-bracket"></i> Thay đổi mật khẩu</a>
+                        </li>
+                        <li><a href="#sign-in-up.html" onclick="handleLogout()"><i
+                                    class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li id="navbar-hidden"><a href="/home.html"><i class="fa-solid fa-table-columns"></i></a>
+            </ul>
+        </div>
+    </nav>
+    <!-- </header> -->
+    <main>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image/slide1.jpg" style="width: 100%">
+                <div id="mySlides_1">
+                    <h1>100% NATURAL</h1>
+                </div>
+                <div id="mySlides_2">
+                    <h2>TƯƠI NGON & GIÒN MÁT
+                        <br> ĐẢM BẢO CHẤT LƯỢNG
+                    </h2>
+                </div>
+                <div>
+                    <a href="user/product.html"><button id="slider_button" type="button">MUA NGAY</a></button>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image/slide2.avif" style="width: 100%">
+                <div id="mySlides_1">
+                    <h1>100% NATURAL</h1>
+                </div>
+                <div id="mySlides_2">
+                    <h2>ƯU ĐÃI HẤP DẪN
+                        <br> MUA HÀNG LIỀN TAY
+                    </h2>
+                </div>
+                <div>
+                    <a href="user/products.html"><button id="slider_button" type="button">MUA NGAY</a></button>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image/bground1.jpg" style="width: 100%">
+                <div id="mySlides_1">
+                    <h1>100% NATURAL</h1>
+                </div>
+                <div id="mySlides_2">
+                    <h2>GIẢM GIÁ SẢN PHẨM
+                        <br> LÊN ĐẾN 50%
+                    </h2>
+                </div>
+                <div>
+                    <a href="product.html"><button id="slider_button" type="button">MUA NGAY</a></button>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+
+        <div class="container-product">
+            <div class="list-image" id="list-image-product">
+                <!-- <div class="product_img">
+                    <figure>
+                        <a href="product.html">
+                            <img src="" alt="cam_uc">
+                        </a>
+
+                    </figure>
+                </div> -->
+
+            </div>
+            <a class="feedback-prev" onclick="plusSlidesFeedback(-1)">❮</a>
+            <a class="feedback-next" onclick="plusSlidesFeedback(1)">❯</a>
+        </div>
+
+        <div class="product-list-container">
+            <div class="product-list-items">
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product2.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Nước ép trái cây</h3>
+                                    <h2>Nước ép tự nhiên<br> đóng chai tiện lợi</h2>
+                                    <p>Giảm tới 40% các loại nước ép</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </figure>
+
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image//product6.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Rau củ quả</h3>
+                                    <h2>Đến từ các nông trại<br> Mộc Châu, Đà Lạt</h2>
+                                    <p>100% hữu cơ tươi ngon</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product4.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Trái cây nội </h3>
+                                    <h2>Các loại trái cây<br> đặc sản vùng miền</h2>
+                                    <p>Giảm giá lên tới 30%<br> nhiều sản phẩm</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product5.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Trái cây nhập khẩu</h3>
+                                    <h2>Đảm bảo nguồn gốc,<br> xuất xứ, chất lượng</h2>
+                                    <p>Nhiều sản phẩm mới</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="featured_products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="featured_products_list">
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/nhoden.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="user/product.html">
+                            <h2 class="product_title" onclick="showProductDetail()">Nho đen không hạt Úc</h2>
+                        </a>
+                        <span>189.000đ</span>
+                        <del>249.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button> -->
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/dautay.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="#">
+                            <h2 class="product_title" onclick="showProductDetail()">Dâu tây Đà Lạt</h2>
+                        </a>
+                        <span>190.000đ</span>
+                        <del>249.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button> -->
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/dragon-fruit-1490952843346-crop-1490953174156-2057.jpg"
+                                        alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="user/product.html">
+                            <h2 class="product_title" onclick="showProductDetail()">Thanh long trắng miền Tây</h2>
+                        </a>
+                        <span>28.000đ</span>
+                        <del>39.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button> -->
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/sau_rieng_ri6_2_5635cf70bdbc413db7ccdb9bbc5955ed_master.jpg"
+                                        alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="user/product.html">
+                            <h2 class="product_title">Sầu riêng ri 6</h2>
+                        </a>
+                        <span>169.000đ</span>
+                        <del>199.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button> -->
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/kiwixanh.png" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="user/product.html">
+                            <h2 class="product_title">Kiwi xanh Newzealand</h2>
+                        </a>
+                        <span>109.000đ</span>
+                        <del>139.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                                            hàng</button> -->
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="user/product.html">
+                                    <img src="image/chanhvangkhonghat.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="product-badge">
+                            <span class="sale-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="product_rating">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star"></i></a>
+                        <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    </div>
+                    <div class="product_price">
+                        <a href="user/product.html">
+                            <h2 class="product_title">Chanh vàng không hạt</h2>
+                        </a>
+                        <span>99.000đ</span>
+                        <del>139.000đ</del>
+                        <!-- <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                                                            hàng</button> -->
+                    </div>
+                </div>
+                <a class="prev-featured-product" onclick="changeNextImage()">❮</a>
+                <a class="next-featured-product" onclick="changePrevImage()">❯</a>
+
+            </div>
+            <!-- <div class="btn-seemore">
+                <a href="#"><button>XEM THÊM</button></a>
+            </div> -->
+
+        </div>
+
+
+        <div class="categories">
+            <h2>Danh mục sản phẩm</h2>
+            <div class="categories_btn">
+                <!-- <button class="btn active">Tất cả sản phẩm</button>
+                <button class="btn">Trái cây nội</button>
+                <button class="btn">Trái cây nhập khẩu</button>
+                <button class="btn">Nước ép trái cây</button>
+                <button class="btn">Rau củ quả</button> -->
+            </div>
+            <div class="categories-container">
+                <!-- <div class="column-xl4 domestic">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="product-detail.html">
+                                    <img src="image/product3.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="product_price">
+                        <a href="#">
+                            <h2 class="product_title" onclick="showProductDetail()">Cam vàng Úc</h2>
+                        </a>
+                        <span>99.000đ</span>
+                        <button class="button_add" ><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button>
+                    </div>
+                </div>
+                <div class="column-xl4 imported">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="product-detail.html">
+                                    <img src="image/product3.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="product_price">
+                        <a href="#">
+                            <h2 class="product_title">Cam vàng Úc</h2>
+                        </a>
+                        <span>99.000đ</span>
+                        <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button>
+                    </div>
+                </div>
+                <div class="column-xl4 juice">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="product-detail.html">
+                                    <img src="image/product3.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="product_price vegetables">
+                        <a href="#">
+                            <h2 class="product_title">Cam vàng Úc</h2>
+                        </a>
+                        <span>99.000đ</span>
+                        <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button>
+                    </div>
+                </div>
+                <div class="column-xl4">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <figure>
+                                <a href="product-detail.html">
+                                    <img src="image/product3.jpg" alt="cam_uc">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="product_price">
+                        <a href="#">
+                            <h2 class="product_title">Cam vàng Úc</h2>
+                        </a>
+                        <span>99.000đ</span>
+                        <button class="button_add"><i class="bi bi-basket"></i> Thêm vào giỏ
+                            hàng</button>
+                    </div>
+                </div>
+            </div> -->
+                <div class="btn-seemore">
+                    <a href="#"><button>XEM THÊM</button></a>
+                </div>
+            </div>
+
+
+            <div class="feedback">
+                <h2>Phản hồi từ khách hàng</h2>
+                <div class="slideshow-container-feedback">
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback1.jpeg" alt="">
+                        <p>"Sản phẩm tươi mới, giao hàng nhanh, nhân viên siêu nhiệt tình, sẽ tiếp tục gắn bó lâu dài
+                            với
+                            Greentie"</p>
+                        <p><span>Chị Hương Liên</span>- Ba Đình, Hà Nội</p>
+                    </div>
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback3.jpeg" alt="">
+                        <p>"Lần thứ 2 mua trái cây ở Greentie. Thanh long đỏ đẹp và siêu ngọt, giá thì siêu hời"</p>
+                        <p><span>Chị Mai Hoa</span> - Nam Từ Liêm, Hà Nội</p>
+                    </div>
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback4.jpeg" alt="">
+                        <p>"Hôm trước đi làm về muộn không kịp mua đồ, alo cho Greentie, nửa tiếng sau hàng đã giao đến
+                            tận
+                            cửa."</p>
+                        <p><span>Chị Bích Ngọc</span>- Cầu Giấy, Hà Nội</p>
+                    </div>
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback5.jpeg" alt="">
+                        <p>"10 điểm cho em nhân viên bán hàng, chọn hàng tươi, ngon cho mình, mà tư vấn siêu có tâm"</p>
+                        <p><span>Chị Thái Hà</span> - Hoàng Mai, Hà Nội</p>
+                    </div>
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback2.webp" alt="">
+                        <p>"Tìm mãi mới thấy có 1 địa chỉ bán rau Đà Lạt tươi ngon như Greentie"</p>
+                        <p><span>Anh Tuấn Hải</span> - Nam Từ Liêm, Hà Nội</p>
+                    </div>
+                    <div class="mySlides-feedback fade">
+                        <img src="/image/feedback6.jpeg" alt="">
+                        <p>"Trẻ con nhà mình rất thích nước ép táo đào của Greentie, nhà mình mua thường xuyên còn được
+                            tặng
+                            mã giảm giá nữa. "</p>
+                        <p><span>Chị Ngọc Diệp</span> - Bắc Từ Liêm, Hà Nội</p>
+                    </div>
+
+
+
+                    <a class="feedback-prev" onclick="plusSlidesFeedback(-1)">❮</a>
+                    <a class="feedback-next" onclick="plusSlidesFeedback(1)">❯</a>
+
+                </div>
+            </div>
+
+
+            <div class="section-content">
+                <div class="section-content-container">
+                    <div class="section-content-item1">
+                        <div class="section-content-img1">
+                            <a href="#"></a> <img
+                                src="http://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/banner29.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="section-content-item2">
+                        <div class="section-content-img2">
+                            <a href="#"><img
+                                    src="http://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/banner30.jpg"
+                                    alt=""></a>
+                            <div class="section-content-text">
+                                <h2>100%</h2>
+                                <p>NATURAL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content-item3">
+                        <div class="section-content-item-block">
+                            <div class="section-content-img3">
+                                <a href="#"><img
+                                        src="http://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/banner31.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="section-content-img4">
+                                <a href="#"><img
+                                        src="http://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/banner32.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="section-content-img5">
+                            <a href="#"><img
+                                    src="http://mauweb.monamedia.net/cleverfood/wp-content/uploads/2019/05/banner33.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-content-inner">
+                    <h2>Đăng ký để nhận thông tin</h2>
+                    <div class="f-empty">
+                        <div class="footer-empty"></div>
+                        <div> <i class="fa-solid fa-snowflake"></i> <i class="fa-solid fa-snowflake"></i> <i
+                                class="fa-solid fa-snowflake"></i></div>
+                        <div class="footer-empty"></div>
+                    </div>
+                    <span>Để lại email để không bỏ lỡ bất kì ưu đãi nào</span>
+                    <div class="footer-sign">
+                        <form action="">
+                            <span><input type="email" name="" id="" placeholder="Email...">
+                                <a><input type="button" value="ĐĂNG KÝ"></a></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer1">
+            <div id="footer_logo">
+                <img src="image/logo copy.png" alt="">
+                <div id="address">
+                    <p><i class="fa-solid fa-location-dot"></i><span> Mỹ Đình, Nam Từ Liêm, Hà Nội</span></p>
+                </div>
+                <div id="phone">
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:083-123-4567"><span>083-123-4567</span></a>
+                    </p>
+                </div>
+                <div id="email">
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@greentie.com">info@greentie.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>DANH MỤC</li>
+                    <li><a href="user/about.html">Giới thiệu</a></li>
+                    <li><a href="user/product.html">Sản phẩm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>SẢN PHẨM</li>
+                    <li><a href="user/product.html">Trái cây nội</a></li>
+                    <li><a href="user/product.html">Trái cây nhập khẩu</a></li>
+                    <li><a href="user/product.html">Nước ép trái cây</a></li>
+                    <li><a href="user/product.html">Rau củ quả</a></li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>THEO DÕI CHÚNG TÔI</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Greentie &copy; 2023 All Rights Reversed</p>
+        </div>
+    </footer>
+
+    <script src="user/js/project.js"></script>
+    <script src="user/js/sign.js"></script>
+    <script src="user/js/account.js"></script>
+    <script src="user/js/index.js"></script>
+    <script src="user/js/addCart.js"></script>
+    <script src="user/js/detail.js"></script>
+    <!-- <script src="user/js/product.js"></script> -->
+
+    <a href="image/nceptao.webp"></a>
+
+
+    </head>
+
+</body>
+
+</html>
