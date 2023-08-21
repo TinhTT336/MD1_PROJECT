@@ -1,0 +1,52 @@
+#form_scope_show {
+    position: absolute;
+    border: 1px solid #efeffe;
+    top: 0;
+    right: 0;
+    left: 260px;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 100px;
+    color: #000;
+
+}
+
+.modal-content-inner {
+    width: 500px;
+    margin: auto;
+
+    gap: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #8cc63f;
+}
+
+.modal-header p {
+    padding: 10px 0;
+}
+
+.modal-header {
+    padding-bottom: 15px;
+}
+
+
+#order-details {
+    padding: 12px 0;
+}
+
+.waiting {
+    background-color: #8a8a8e;
+}
+
+.accepted {
+    background-color: #8cc63f;
+}
+
+.denied {
+    background-color: #353537;
+}
+
+.no_click {
+    pointer-events: none;
+}
