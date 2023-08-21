@@ -1,0 +1,77 @@
+.account-user {
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 3rem auto;
+}
+
+/* .signup h3 {
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #86ba09;
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    font-size: 18px;
+} */
+.form-left-account {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-right {
+    width: 40%;
+}
+
+.form-right-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-right-account label {
+    /* max-width: 100%; */
+    margin-top: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.form-right-account input {
+    color: rgb(102, 102, 102);
+    display: inline-block;
+    border: 1px solid #86ba09;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+    width: 70%;
+    outline: none;
+}
+
+
+#form-account button {
+    padding: 0.8rem;
+    color: #fff;
+    background-color: #86ba09;
+    border-color: transparent;
+    margin-top: 10px;
+    font-weight: 700;
+    width: 12rem;
+}
+
+#form-account button:hover {
+    background-color: #000;
+}
+
+#form-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn-account {
+    display: block;
+    text-align: end;
+}

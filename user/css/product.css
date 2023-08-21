@@ -1,0 +1,101 @@
+#slider_button {
+    padding: 0.8rem;
+    background-color: #80B500;
+    color: #fff;
+    font-size: larger;
+    width: 10rem;
+    border-color: transparent;
+    outline: none;
+    border-radius: 2rem;
+    position: absolute;
+    right: 14rem !important;
+    bottom: 10rem !important;
+    animation: fadeInUp 5s;
+    font-weight: 500;
+}
+
+.slideshow-container .mySlides {
+    position: relative;
+}
+
+.categories {
+    display: flex !important;
+    gap: 3rem;
+    margin-top: 30px;
+
+}
+
+.categories_btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.categories_btn button {
+    font-size: 1rem;
+    padding: 15px;
+    text-align: left;
+}
+
+.categories-left {
+    margin-top: 2rem;
+    width: 260px;
+
+}
+
+
+
+.categories_btn {
+    width: 260px;
+}
+
+#sort-price {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#sort-price h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#sort-price button {
+    padding: 15px;
+    outline: none;
+    font-size: 16px;
+    text-align: left;
+    border-color: transparent;
+    background-color: #ddd;
+}
+
+#sort-price button:hover {
+    background-color: #717171;
+    color: #fff;
+}
+
+#sort-price .btn.active {
+    background-color: #000;
+    color: white;
+}
+
+.pagination li {
+    background-color: #ffffffBD;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background-color: #9e9999;
+    color: #fff !important;
+}
+
+.pagination li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
