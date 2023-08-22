@@ -1,0 +1,28 @@
+/* about */
+.about {
+    width: 70vw;
+    margin: 2rem auto;
+}
+
+.about h1 {
+    display: block;
+    border-bottom: 1px solid #86ba09;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #86ba09;
+}
+
+.about h3 {
+    display: block;
+    padding: 1.5rem 0 1rem;
+    color: #86ba09;
+}
+
+.intro ul li {
+    list-style-type: square;
+    padding: 0.6rem;
+}
+
+.about p {
+    line-height: 2rem;
+}

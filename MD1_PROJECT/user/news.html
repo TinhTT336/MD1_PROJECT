@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/news.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <p>Tươi ngon mỗi ngày | Greentie</p>
+        <ul>
+            <li onclick="document.getElementById('signin_form').style.display='block'" style="width:auto;">Đăng nhập
+            </li>
+            <li onclick="document.getElementById('register_form').style.display='block'" style="width:auto;">Đăng ký
+            </li>
+            <!-- <li>Đăng nhập</a></li> -->
+            <!-- <li>Đăng ký</li> -->
+            <li><a href="/cart.html">Giỏ hàng<i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </header>
+    <!-- </div> -->
+    <nav>
+        <img src="image/logo copy.png" alt="">
+        <ul>
+            <li><a href="/index.html">Trang chủ</a></li>
+            <li><a href="/about.html">Giới thiệu</a></li>
+            <li><a href="/product.html">Sản phẩm <i class="wsmenu-arrow fa fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="#">Trái cây nội</a></li>
+                    <li><a href="#">Trái cây nhập khẩu</a></li>
+                    <li><a href="#">Nước ép trái cây</a></li>
+                    <li><a href="#">Hạt dinh dưỡng</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact.html">Liên hệ</a></li>
+            <li><a href="/news.html">Tin tức</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Nhập tên sản phẩm">
+            <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="slider">
+            <!-- <div id="silder1">
+                    <img src="image/Apricots.webp" alt="">
+                </div> -->
+            <div id="slider2">
+                <img src="image/slide.avif" alt="">
+            </div>
+            <div id="slider3">
+                <h3><img src="image/eco-green-leaf-icon-bio-nature-green-eco-symbol-web-business-simple-flat-illustration_599062-762.jpg"
+                        alt="">100% sản phẩm hữu cơ</h3>
+            </div>
+            <div id="slider4">
+                <h1>TƯƠI NGON & GIÒN MÁT
+                    <br> ĐẢM BẢO CHẤT LƯỢNG
+                </h1>
+            </div>
+
+            <button id="slider_button" type="button"><a href="products.html">MUA NGAY</a></button>
+
+        </div>
+
+
+        <div class="product-list-container">
+            <div class="product-list-items">
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product2.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Nước ép trái cây</h3>
+                                    <h2>Nước ép tự nhiên<br> đóng chai tiện lợi</h2>
+                                    <p>Giảm tới 40% các loại nước ép</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </figure>
+
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image//product6.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Rau củ quả</h3>
+                                    <h2>Đến từ các nông trại<br> Mộc Châu, Đà Lạt</h2>
+                                    <p>100% hữu cơ tươi ngon</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product4.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Trái cây nội </h3>
+                                    <h2>Các loại trái cây<br> đặc sản vùng miền</h2>
+                                    <p>Giảm giá lên tới 30%<br> nhiều sản phẩm</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="product_image">
+                    <figure>
+                        <div class="product-img-content">
+                            <a href="user/product.html">
+                                <img src="/image/product5.jpg" alt="cam_uc">
+                                <div class="product-text">
+                                    <h3>Trái cây nhập khẩu</h3>
+                                    <h2>Đảm bảo nguồn gốc,<br> xuất xứ, chất lượng</h2>
+                                    <p>Nhiều sản phẩm mới</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="articles">
+            <div class="news">
+                <h1>Tin tức</h1>
+                <p>Vào tháng 03 hàng năm tại các khu vực miền tây và miền bắc nước ta là thời điểm những trang trại
+                    nhãn
+                    bắt đầu nở hoa đây
+                    cũng là thời điềm những nhà nuôi ong ở các nơi sẽ tiến hành di chuyển đàn ong đến thu hoạch mật
+                    ong
+                    hoa nhãn. Các chú
+                    ong khi được đưa đến đây sẽ làm việc chăm chỉ ngày đêm. Ban ngày đi hút mật đưa về tổ, ban đêm
+                    tiến
+                    hành luyện mật qua
+                    một quá trình dài. Khi mật đủ chín, chủ trại nuôi ong của Hilobee mới tiến hành quay lấy mật.
+                    Đặc
+                    thù hoa nhãn có hương
+                    vị rất đặc trưng và dễ nhận biết.</p>
+            </div>
+            <div id="sidebar">
+                <aside id="search_aside">
+                    <form action="" method="get">
+                        <input type="text" name="sidebar_search" id="sidebar_search" placeholder="Tìm kiếm">
+                        <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </aside>
+                <aside id="recentnews">
+                    <p>bài viết mới</p>
+                    <ul>
+                        <li class="recent-blog-posts-li">
+                            <div class="badge">
+                                <div class="badge-inner bg-fill"
+                                    style="background: url(https://photo-cms-plo.epicdn.me/w850/Uploaded/2023/tmuihk/2023_04_17/qua-hong-4275.png); border:0;">
+                                </div>
+                            </div>
+                            <div>
+                                <a href="https://plo.vn/cac-loai-trai-cay-giau-chat-xo-va-it-duong-tot-cho-suc-khoe-post729141.html"
+                                    title="Các loại trái cây giàu chất xơ và ít đường tốt cho sức khỏe">Các loại trái
+                                    cây giàu chất xơ và ít đường tốt cho sức khỏe</a>
+                            </div>
+                        </li>
+                        <li class="recent-blog-posts-li">
+                            <div class="badge">
+                                <div class="badge-inner bg-fill"
+                                    style="background: url(https://giadinh.mediacdn.vn/296230595582509056/2023/3/30/photo-1680156415430-16801564156601412176261.jpg); border:0;">
+                                </div>
+                            </div>
+                            <div>
+                                <a href="https://vnexpress.net/nhung-loai-trai-cay-nen-an-trong-mua-he-4607613.htm" 11
+                                    loại trái cây giàu chất xơ rất cần cho bữa ăn gia đình>11 loại trái cây giàu chất xơ
+                                    rất cần
+                                    cho bữa ăn gia đình</a>
+                            </div>
+                        </li>
+                        <li class="recent-blog-posts-li">
+                            <div class="badge">
+                                <div class="badge-inner bg-fill"
+                                    style="background: url(https://photo-cms-plo.epicdn.me/w850/Uploaded/2023/tmuihk/2023_04_17/qua-hong-4275.png); border:0;">
+                                </div>
+                            </div>
+                            <div>
+                                <a href="https://vnexpress.net/nhung-loai-trai-cay-nen-an-trong-mua-he-4607613.html"
+                                    title="Những loại trái cây nên ăn trong mùa hè">Những loại trái cây nên ăn trong mùa
+                                    hè</a>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="content">
+                <div class="news1">
+                    <img src="https://giadinh.mediacdn.vn/296230595582509056/2023/3/30/photo-1680156415430-16801564156601412176261.jpg"
+                        alt="">
+                    <div class="news1_article">
+                        <h4><a href="https://plo.vn/cac-loai-trai-cay-giau-chat-xo-va-it-duong-tot-cho-suc-khoe-post729141.html"
+                                title="">11 loại trái cây giàu chất xơ rất cần cho bữa ăn gia đình</a></h4>
+                        <p>Chất xơ từ trái cây có thể giúp giảm táo bón, cải thiện sức khỏe đường ruột và giảm mức
+                            cholesterol...</p>
+                    </div>
+                </div>
+                <div class="news1">
+                    <img src="https://i1-suckhoe.vnecdn.net/2023/05/20/beautiful-chopped-ripe-mango-d-2322-4631-1684572442.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=EOjtDFCSikLnilYxMnR3Tg"
+                        alt="">
+                    <div class="news1_article">
+                        <h4><a href="https://giadinh.suckhoedoisong.vn/12-loai-trai-cay-giau-chat-xo-rat-can-cho-bua-an-gia-dinh-172230329224621107.htm "
+                                title="">11 loại trái cây giàu chất xơ rất cần cho bữa ăn gia đình</a></h4>
+                        <p>Chất xơ có trong các loại trái cây (hoa quả) nào? Nếu chưa biết hoặc biết rất ít về những
+                            loại
+                            trái cây nhiều chất xơ,...</p>
+                    </div>
+                </div>
+                <div class="news1">
+                    <img src="https://photo-cms-plo.epicdn.me/w850/Uploaded/2023/tmuihk/2023_04_17/qua-hong-4275.png"
+                        alt="">
+                    <div class="news1_article">
+                        <h4><a href="https://plo.vn/cac-loai-trai-cay-giau-chat-xo-va-it-duong-tot-cho-suc-khoe-post729141.html"
+                                title="">Những loại trái cây nên ăn trong mùa hè</a></h4>
+                        <p>Xoài giàu chất xơ và vitamin, dưa hấu giúp bù nước, ổi có thể giúp lượng đường trong máu ổn
+                            định....</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer1">
+            <div id="footer_logo">
+                <img src="image/logo copy.png" alt="">
+                <div id="address">
+                    <p><i class="fa-solid fa-location-dot"></i><span> Mỹ Đình, Nam Từ Liêm, Hà Nội</span></p>
+                </div>
+                <div id="phone">
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:083-123-4567"><span>083-123-4567</span></a>
+                    </p>
+                </div>
+                <div id="email">
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@greentie.com">info@greentie.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>DANH MỤC</li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>SẢN PHẨM</li>
+                    <li><a href="product.html">Trái cây nội</a></li>
+                    <li><a href="product.html">Trái cây nhập khẩu</a></li>
+                    <li><a href="product.html">Nước ép trái cây</a></li>
+                    <li><a href="product.html">Rau củ quả</a></li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>THEO DÕI CHÚNG TÔI</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Greentie &copy; 2023 All Rights Reversed</p>
+        </div>
+    </footer>
+
+
+    <script src="js/project.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+#form_scope_show {
+    position: absolute;
+    border: 1px solid #efeffe;
+    top: 0;
+    right: 0;
+    left: 260px;
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    padding: 100px;
+    color: #000;
+    margin: 0 auto;
+
+}
+
+/* .modal-content-inner {
+    width: 50vw;
+
+    gap: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 auto;
+} */
+
+.modal-header h3 {
+    display: block;
+    font-size: 2rem !important;
+    border-bottom: 1px solid #8a8a8e;
+    text-align: center;
+}
+
+.modal-header p {
+    padding: 10px 0;
+}
+
+.modal-header {
+    padding-bottom: 15px;
+}
+
+.modal-content-inner h4 {
+    text-align: center;
+    display: block;
+    width: 80%;
+}
+
+#form_scope_show table {
+    width: 100%;
+    margin: 10px auto;
+}
+
+tfoot td {
+    font-weight: 600;
+}
+
+table td {
+    text-align: center;
+}
+
+#order-details {
+    padding: 12px 0;
+}
+
+.waiting {
+    background-color: #8a8a8e;
+    width: 10rem;
+}
+
+.accepted {
+    background-color: #8cc63f;
+    width: 10rem;
+}
+
+.denied {
+    background-color: #353537;
+    width: 10rem;
+}
+
+.no_click {
+    pointer-events: none;
+    display: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container" id="form-signin">
+            <div class="container-right aside">
+                <h1>Chào mừng bạn đến với Greentie!</h1>
+                <p>Đăng ký tài khoản để có trải nghiệm mua sắm thú vị cùng Greentie nhé</p>
+                <button class="ghost" id="signUp" onclick="toggleForm()">Đăng ký</button>
+            </div>
+            <form action="#" id="sign-in">
+                <h1>Đăng nhập</h1>
+                <input id="signin_username" type="text" placeholder="Tên đăng nhập">
+
+                <input id="signin_pass" type="password" placeholder="Mật khẩu">
+                <p id="error-message"></p>
+                <button id="btn_signin">Đăng nhập</button>
+                <span id="forgot-pass"><a href="forgetPass.html">Quên mật khẩu?</a></span>
+            </form>
+        </div>
+        <div class="form-container sign-up-container hidden" id="form-signup">
+            <form action="#" method="post" enctype="multipart/form-data" id="sign-up">
+                <h1>Đăng ký tài khoản</h1>
+                <input id="signup_name" type="text" placeholder="Họ và tên">
+                <p class="error-message" id="name-error"></p>
+
+                <input id="signup_username" type="text" placeholder="Tên đăng nhập">
+                <p class="error-message" id="username-reg-error"></p>
+
+                <input id="signup_email" type="email" placeholder="Email">
+                <p class="error-message" id="email-error"></p>
+                <input id="signup_img" type="file" placeholder="Avatar">
+                <img id="avatar">
+
+                <input id="signup_pass" type="password" placeholder="Mật khẩu">
+                <p class="error-message" id="password-reg-error"></p>
+
+                <input id="signup_confirmpass" type="password" placeholder="Xác nhận lại mật khẩu">
+                <p class="error-message" id="confirm-password-error"></p>
+
+                <!-- <label for="avatar" class="label_avatar btn">Avatar</label> -->
+                <!-- <input type="file" accept="image/*" multiple="false" id="avatar">
+                <img src="" alt="" id="avatar-preview"> -->
+
+                <!-- <div class="checkbox">
+                    <input id="checkbox-remember" type="checkbox" placeholder="Ghi nhớ tài khoản">
+                    <label for="checkbox-remember">Ghi nhớ thông tin</label>
+                </div> -->
+
+                <button id="btn_signup">Đăng ký</button>
+            </form>
+            <div class="container-left aside">
+                <h1>Welcome Back!</h1>
+                <p>Đăng nhập để tiếp tục mua sắm cùng Greentie</p>
+                <button class="ghost" id="signIn" onclick="toggleForm()">Đăng nhập</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/sign.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="/Users/admin/Desktop/MD1_PROJECT/ADMIN/js/main.js"></script> -->
+</body>
+
+</html>

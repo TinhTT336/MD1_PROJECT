@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/sign.css"> -->
+    <link rel="stylesheet" href="css/forgetPass.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container forget-container hidden" id="form-1">
+            <div class="container-right aside">
+                <h1>Bạn quên mật khẩu?</h1>
+                <p>Đừng lo lắng, điền email đăng ký để lấy lại mật khẩu nhé</p>
+                <!-- <button class="ghost" id="" onclick="toggleForm()">Xác nhận mật khẩu</button> -->
+            </div>
+            <form action="#" id="forget-pass">
+                <h1>Nhập email đăng ký vào đây</h1>
+
+                <input id="input-email" type="email" placeholder="Email">
+                <p id="error"></p>
+                <button id="btn_send" onclick="forgetPass()">Gửi</button>
+            </form>
+        </div>
+        <div class="form-container code-container hidden" id="form-2">
+            <form action="#" method="post" enctype="multipart/form-data" id="form-code">
+                <h1>Nhập mã xác thực</h1>
+                <input id="code-input" type="text" placeholder="Nhập mã xác thực">
+                <p class="error-message" id="error-code"></p>
+
+                <button id="btn_signup" type="button" onclick="confirmCode()">Xác nhận</button>
+            </form>
+            <div class="container-left aside">
+                <h1>Mã xác thực</h1>
+                <p>Mã xác thực đã được gửi tới bạn qua email đăng ký</p>
+                <!-- <button class="ghost" id="btn_code" onclick="toggleForm()">Nhập email</button> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="js/sign.js"></script> -->
+    <script src="js/forgetPass.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>
